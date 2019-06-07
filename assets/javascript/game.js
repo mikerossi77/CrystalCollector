@@ -10,6 +10,7 @@ $(document).ready(function () {
     var targetNumber = Math.floor(Math.random() * 30) + 20;
     var wins = 0;
     var losses = 0;
+    $("#winLose").text("Press a Crystal...");
 
 
     var resetGame = function () {
@@ -28,18 +29,18 @@ $(document).ready(function () {
 
     var crystalPressed = function (crystalValue) {
 
-        $("#winLose").text("");
+        $("#winLose").text("Keep going...");
         totalScore = totalScore + crystalValue;
         $("#totalScore").text(totalScore);
         if (targetNumber === totalScore) {
             wins++;
-            $("#winLose").text("You Win!!!");
+            $("#winLose").text("You Win!!!  Go Again:");
             $("wins").text("Wins: " + wins)
             resetGame()
         }
         else if (totalScore > targetNumber) {
             losses++;
-            $("#winLose").text("You Lose!!!  Go Again");
+            $("#winLose").text("You Lose!!!  Go Again:");
             $("#losses").text("Losses:  " + losses);
             resetGame()
         }
