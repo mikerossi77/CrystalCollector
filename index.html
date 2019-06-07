@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Crystal Collector</title>
+</head>
+<body>
+    <h1 id="myTitle">Crystals Collector</h1>
+
+    <div id="targeNumberDiv">
+        <h1 id="targetNumber">15</h1>
+    </div>
+    <div id="winsLossesDiv">
+        <h2 id="winLose"></h2>
+        <h3 id="wins">Wins : 0</h3>
+        <h3 id="losses">Losses: 0</h3>
+    </div>
+    <div>
+        <img id="green1" src="./assets/images/Crystal_1_Green.jpg" width = "80" alt="">
+        <img id="blue2" src="./assets/images/Crystal_2_Blue.jpg" width = "80" alt="">
+        <img id="orange3" src="./assets/images/Crystal_3_Orange.jpg" width = "80" alt="">
+        <img id="pink4" src="./assets/images/Crystal_4_Pink.jpg" width = "80" alt="">
+    </div>
+    <div class="totalScoreDiv">
+        <h2>Your total score is:</h2>
+    </div>
+    <div class="totalScoreDiv">
+        <h1 id="totalScore">0</h1>
+    </div>
+    <div id="directions">
+        <h2>How to Play:</h2>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score/</p>
+        <p>You win the game by matching your total score to reandom number, you lose the game if your total score goes above the random number.</p>
+        <p>The value off each crystal is hidden from you intil you click on it</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#directions {
+    background: blue;
+    color: white;
+}
+#myTitle {
+    background: brown;
+    color: white;
+}
+#targeNumberDiv {
+    background: green;
+    color:  white;
+}
+#winsLossesDiv {
+    background: rgb(205, 241, 205);
+
+}
+.totalScoreDiv {
+    background: orange;
+}
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2017/03/02/08/58/background-texture-2110724__340.jpg");
+}
